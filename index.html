@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SAA-C03 FINAL EXAM (20Q)</title>
+<meta charset="UTF-8">
+<style>
+body {font-family:Arial; max-width:900px; margin:auto; padding:20px;}
+.question {margin-bottom:20px;}
+button {padding:10px 15px; margin-top:10px;}
+.correct {color:green;}
+.wrong {color:red;}
+</style>
+</head>
+
+<body>
+
+<h1>SAA-C03 FINAL EXAM (20 Questions)</h1>
+<p>Pass mark: 90% (18/20)</p>
+
+<form id="quiz">
+
+<div class="question">
+<p>1. Private EC2 needs S3 access without internet</p>
+<input type="radio" name="q1" value="A"> NAT<br>
+<input type="radio" name="q1" value="B"> IGW<br>
+<input type="radio" name="q1" value="C"> VPC Endpoint<br>
+<input type="radio" name="q1" value="D"> VPN<br>
+</div>
+
+<div class="question">
+<p>2. Decouple system</p>
+<input type="radio" name="q2" value="A"> SNS<br>
+<input type="radio" name="q2" value="B"> SQS<br>
+<input type="radio" name="q2" value="C"> Lambda<br>
+<input type="radio" name="q2" value="D"> EC2<br>
+</div>
+
+<div class="question">
+<p>3. HA database</p>
+<input type="radio" name="q3" value="A"> Replica<br>
+<input type="radio" name="q3" value="B"> Multi-AZ<br>
+<input type="radio" name="q3" value="C"> S3<br>
+<input type="radio" name="q3" value="D"> EFS<br>
+</div>
+
+<div class="question">
+<p>4. Cheapest compute</p>
+<input type="radio" name="q4" value="A"> Reserved<br>
+<input type="radio" name="q4" value="B"> Spot<br>
+<input type="radio" name="q4" value="C"> On-demand<br>
+<input type="radio" name="q4" value="D"> Dedicated<br>
+</div>
+
+<div class="question">
+<p>5. Global latency reduction</p>
+<input type="radio" name="q5" value="A"> EC2<br>
+<input type="radio" name="q5" value="B"> CloudFront<br>
+<input type="radio" name="q5" value="C"> S3<br>
+<input type="radio" name="q5" value="D"> Lambda<br>
+</div>
+
+<div class="question">
+<p>6. Fan-out</p>
+<input type="radio" name="q6" value="A"> SQS<br>
+<input type="radio" name="q6" value="B"> SNS<br>
+<input type="radio" name="q6" value="C"> EC2<br>
+<input type="radio" name="q6" value="D"> RDS<br>
+</div>
+
+<div class="question">
+<p>7. Shared storage</p>
+<input type="radio" name="q7" value="A"> EBS<br>
+<input type="radio" name="q7" value="B"> EFS<br>
+<input type="radio" name="q7" value="C"> S3<br>
+<input type="radio" name="q7" value="D"> Glacier<br>
+</div>
+
+<div class="question">
+<p>8. Outbound internet only</p>
+<input type="radio" name="q8" value="A"> IGW<br>
+<input type="radio" name="q8" value="B"> NAT<br>
+<input type="radio" name="q8" value="C"> VPN<br>
+<input type="radio" name="q8" value="D"> Route53<br>
+</div>
+
+<div class="question">
+<p>9. Cache</p>
+<input type="radio" name="q9" value="A"> DynamoDB<br>
+<input type="radio" name="q9" value="B"> ElastiCache<br>
+<input type="radio" name="q9" value="C"> RDS<br>
+<input type="radio" name="q9" value="D"> S3<br>
+</div>
+
+<div class="question">
+<p>10. Temporary access</p>
+<input type="radio" name="q10" value="A"> IAM user<br>
+<input type="radio" name="q10" value="B"> IAM Role<br>
+<input type="radio" name="q10" value="C"> Root<br>
+<input type="radio" name="q10" value="D"> KMS<br>
+</div>
+
+<!-- Duplicate pattern for 20 -->
+<div class="question"><p>11. Static website</p>
+<input type="radio" name="q11" value="A"> EC2<br>
+<input type="radio" name="q11" value="B"> S3<br>
+<input type="radio" name="q11" value="C"> RDS<br>
+<input type="radio" name="q11" value="D"> Lambda<br></div>
+
+<div class="question"><p>12. Event routing</p>
+<input type="radio" name="q12" value="A"> SNS<br>
+<input type="radio" name="q12" value="B"> EventBridge<br>
+<input type="radio" name="q12" value="C"> SQS<br>
+<input type="radio" name="q12" value="D"> EC2<br></div>
+
+<div class="question"><p>13. Block storage</p>
+<input type="radio" name="q13" value="A"> S3<br>
+<input type="radio" name="q13" value="B"> EBS<br>
+<input type="radio" name="q13" value="C"> EFS<br>
+<input type="radio" name="q13" value="D"> Glacier<br></div>
+
+<div class="question"><p>14. NoSQL</p>
+<input type="radio" name="q14" value="A"> RDS<br>
+<input type="radio" name="q14" value="B"> DynamoDB<br>
+<input type="radio" name="q14" value="C"> Aurora<br>
+<input type="radio" name="q14" value="D"> EFS<br></div>
+
+<div class="question"><p>15. Encryption</p>
+<input type="radio" name="q15" value="A"> IAM<br>
+<input type="radio" name="q15" value="B"> KMS<br>
+<input type="radio" name="q15" value="C"> EC2<br>
+<input type="radio" name="q15" value="D"> S3<br></div>
+
+<div class="question"><p>16. Queue ordering</p>
+<input type="radio" name="q16" value="A"> Standard<br>
+<input type="radio" name="q16" value="B"> FIFO<br>
+<input type="radio" name="q16" value="C"> SNS<br>
+<input type="radio" name="q16" value="D"> Lambda<br></div>
+
+<div class="question"><p>17. Serverless compute</p>
+<input type="radio" name="q17" value="A"> EC2<br>
+<input type="radio" name="q17" value="B"> Lambda<br>
+<input type="radio" name="q17" value="C"> ECS<br>
+<input type="radio" name="q17" value="D"> EKS<br></div>
+
+<div class="question"><p>18. HA compute</p>
+<input type="radio" name="q18" value="A"> Single EC2<br>
+<input type="radio" name="q18" value="B"> Auto Scaling Multi-AZ<br>
+<input type="radio" name="q18" value="C"> Lambda<br>
+<input type="radio" name="q18" value="D"> S3<br></div>
+
+<div class="question"><p>19. Hybrid network</p>
+<input type="radio" name="q19" value="A"> IGW<br>
+<input type="radio" name="q19" value="B"> VPN<br>
+<input type="radio" name="q19" value="C"> NAT<br>
+<input type="radio" name="q19" value="D"> CloudFront<br></div>
+
+<div class="question"><p>20. Secrets storage</p>
+<input type="radio" name="q20" value="A"> IAM<br>
+<input type="radio" name="q20" value="B"> Secrets Manager<br>
+<input type="radio" name="q20" value="C"> EC2<br>
+<input type="radio" name="q20" value="D"> S3<br></div>
+
+<button type="button" onclick="submitQuiz()">Submit</button>
+
+</form>
+
+<h2 id="result"></h2>
+
+<script>
+function submitQuiz() {
+let answers = {
+q1:"C", q2:"B", q3:"B", q4:"B", q5:"B",
+q6:"B", q7:"B", q8:"B", q9:"B", q10:"B",
+q11:"B", q12:"B", q13:"B", q14:"B", q15:"B",
+q16:"B", q17:"B", q18:"B", q19:"B", q20:"B"
+};
+
+let score = 0;
+for (let q in answers) {
+let selected = document.querySelector(`input[name=${q}]:checked`);
+if (selected && selected.value === answers[q]) score++;
+}
+
+let result = document.getElementById("result");
+let percent = (score/20)*100;
+
+result.innerHTML = `Score: ${score}/20 (${percent}%)`;
+
+if (score >= 18) result.innerHTML += "<br><span class='correct'>PASS</span>";
+else result.innerHTML += "<br><span class='wrong'>FAIL</span>";
+}
+</script>
+
+</body>
+</html>
